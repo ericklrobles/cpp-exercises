@@ -10,9 +10,6 @@ int main()
   cout <<"which measure of weather unit would you like to use to convert to? (f,c)" << endl;
   cin >> choice;
   
-
-
-
   if(choice == 'c'|| choice == 'C'){
     cout <<"Enter the temp in Celsius";
     cin >> temp;
