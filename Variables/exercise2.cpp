@@ -23,7 +23,7 @@ int main()
     cin >> temp;
     double convTemp = (temp - 32) * 5/9;
     cout <<"Celsius: "<< convTemp << "°C" << endl;
-  }else{
+  }else{ // error handling
     cout<< "invalid entry please enter c or f"<< endl;
   }
 
