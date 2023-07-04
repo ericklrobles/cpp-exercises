@@ -13,20 +13,21 @@ int main()
 
 
 
-  if(choice == 'c'|| 'C'){
-    cout <<"Enter the temp in Celsius to convert to Fahrenheit";
+  if(choice == 'c'|| choice == 'C'){
+    cout <<"Enter the temp in Celsius";
     cin >> temp;
     double convTemp = temp * 9/5 + 32;
-    cout << "Fahrenheit: "<<convTemp<<"°F";
+    cout << "Fahrenheit: "<<convTemp<<"°F" << endl;
   }
 
 
-  if(choice == 'f' || 'F'){
-    cout<<"Enter the temp in Fahrenheit to convert to Celsius";
+  if(choice == 'f' || choice == 'F'){
+    cout<<"Enter the temp in Fahrenheit";
     cin >> temp;
-    double convTemp = (temp - 32) / 9/5;
-
-    cout <<"Celsius: "<< (temp - 32) / 9/5;
+    double convTemp = (temp - 32) * 5/9;
+    cout <<"Celsius: "<< convTemp << "°C" << endl;
+  }else{
+    cout<< "invalid entry please enter c or f"<< endl;
   }
 
 
