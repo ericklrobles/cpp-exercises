@@ -19,18 +19,18 @@ int main()
   int result;// implementing if statements on what we are prompted from the user
   if(op == '+'){
     result = num1 + num2;
-    cout << result;
+    cout << result << endl;
   } else if(op == '-'){
     result = num1 - num2;
-    cout << result;
+    cout << result << endl;
   }else if(op == '*'){
     result = num1 * num2;
-    cout << result;
+    cout << result << endl;
   }else if(op == '/'){
     result = num1 / num2;
-    cout << result;
+    cout << result<< endl;
   }else {
-    cout<<"retry again please it is invalid";
+    cout<<"retry again please it is invalid" << endl;
   }
 
     return 0;
