@@ -7,7 +7,10 @@ using namespace std;
 int main()
 {
     string word = "radar";
-    reverse(word.begin(), word.end());
-    cout <<word;
+    string reversed(word);
+   reverse(reversed.begin(), reversed.end());
+   
+
+    
     return 0;
 }
