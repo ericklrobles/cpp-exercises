@@ -5,6 +5,8 @@
 using namespace std;
 
 int main()
+
+
 {
     string word = "level";
     string reversed(word);// creating a seperate variable & adding the value of the string word 
@@ -13,7 +15,7 @@ int main()
    if(word == reversed){// comparing the two strings (original & reversed string)
     cout <<"The word is a palindrome"<< endl;
    }
-   if(word != reversed){
+   if(word != reversed){// could just use else statement but i wanted to use the comparison operator so why not
     cout << "The word is not a palindrome"<< endl;
    }
    
