@@ -11,6 +11,7 @@ int main()
     cout << "Enter a number to determine whether it is prime or not (pos integer)" << endl;
     cin >> num;
 
+     // situations when user enters 0's and 1's and without this statement it counteracts with for loop & states a false statement
     if (num == 0 || num == 1){
         isPrime = false;
     }
