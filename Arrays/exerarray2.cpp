@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-   const int size = 6;
+   const int size = 6; // The const keyword specifies that a variable's value is constant and tells the compiler to prevent the programmer from modifying it.
    int array [size] = {1,2,3,4,5,6};
    reverse(begin(array),end(array));
    
