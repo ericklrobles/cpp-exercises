@@ -30,7 +30,7 @@ int main()
     attempts++;
 
     }
-    cout << "Game over the correct number is " << randomNum;
+    cout << "Game over the correct number is " << randomNum << endl;
 
     
     return 0;
