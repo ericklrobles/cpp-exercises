@@ -20,6 +20,15 @@ int main()
     while (attempts < MaxAttempts){
     cout << "Guess a number" << endl;
     cin >> givenNum;
+
+     if (cin.fail()) {
+        cout << "Invalid input. Please enter an integer." << endl;
+        cin.clear();  // Clear the error flag
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');  // Discard invalid input
+        continue;  // Start the next iteration of the loop
+    }
+
+    
     if (givenNum == randomNum){
         cout << "Congrats you WON!!" << endl;
         break;
