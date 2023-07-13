@@ -14,8 +14,8 @@ int main()
     mt19937 gen(rd());
     uniform_int_distribution<int> dist(1,9);
     int randomNum = dist(gen);
-    cout << randomNum << endl;
     
+
 
     while (attempts < MaxAttempts){
     cout << "Guess a number" << endl;
@@ -30,7 +30,7 @@ int main()
     attempts++;
 
     }
-    cout << "Game over the correct number is " << dist(rd);
+    cout << "Game over the correct number is " << randomNum;
 
     
     return 0;
