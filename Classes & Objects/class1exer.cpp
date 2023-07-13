@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 class Account{
     public:
           int accountNum;
@@ -11,9 +12,10 @@ class Account{
           void withdraw(double wamount);
           void currentBalance();
 };
+// all 3 methods implemented below class & giving the methods a purpose to use
 void Account::deposit(double amount){
     balance += amount;
-    cout << "You have deposited " << amount << endl;
+    cout << "Hello " << accHolderName <<" You have deposited " << amount << "to " << accountNum << endl;
 }
 void Account::withdraw(double wamount){
     if (wamount > balance){
@@ -32,20 +34,15 @@ void Account::currentBalance(){
 int main()
 {
     Account myAccount;
-    myAccount.accountNum = 0123456;
+    myAccount.accountNum = 12345;
     myAccount.accHolderName = "Erick";
     myAccount.balance = 750.0;
+    // adding values to the declared variables from the class
     
     myAccount.deposit(1000.0);
     myAccount.withdraw(500.0);
     myAccount.currentBalance();
     // deposit method implemented
-
-
-
-
-
-
 
     return 0;
 }
