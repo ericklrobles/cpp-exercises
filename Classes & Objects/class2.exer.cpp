@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-class game{
+class character{
     string name;
     int health;
     string abilities;
