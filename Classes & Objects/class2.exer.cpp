@@ -15,7 +15,7 @@ class character{
         } 
         void swordAttack(){
             cout << name << " is performing a sword attack & saying HIYAH!" << endl;
-        }
+    }
 
 };
 
@@ -24,6 +24,7 @@ class character{
 int main()
 {
     character player("Link", 10, "Time & Weather Manipulation");
+    character enemy("Ganon", 100, "Dark Magic");
     player.swordAttack();
 
 
