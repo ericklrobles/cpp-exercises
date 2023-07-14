@@ -4,25 +4,27 @@ using namespace std;
 
 class character{
     private:
-    string name;
-    int health;
-    string abilities;
+          string name;
+          int health;
+          string abilities;
     
     public:
-    character(const string characterName, int characterHealth, string characterAbilities);
-
+        character(const string characterName, int characterHealth, string characterAbilities)
+        : name(characterName), health(characterHealth), abilities(characterAbilities){
+               
+        } 
+        void swordAttack(){
+            cout << name << " is performing a sword attack & saying HIYAH!" << endl;
+        }
 
 };
-
 
 
 
 int main()
 {
     character player("Link", 10, "Time & Weather Manipulation");
-    
-    
-
+    player.swordAttack();
 
 
     return 0;
