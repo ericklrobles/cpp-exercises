@@ -3,10 +3,14 @@
 using namespace std;
 
 class character{
+    private:
     string name;
     int health;
     string abilities;
     
+    public:
+    character(const string characterName, int characterHealth, string characterAbilities);
+
 
 };
 
@@ -15,6 +19,8 @@ class character{
 
 int main()
 {
+    character player("Link", 10, "Time & Weather Manipulation");
+    
     
 
 
